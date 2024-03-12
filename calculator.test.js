@@ -37,7 +37,7 @@ describe('sum', () => {
 describe('subtract', () => {
   test('can subtract two numbers', () => {
   expected = 6;
-  actual = sum(10, 4);
+  actual = subtract(10, 4);
   expect(actual).toBe(expected);
     }
   )
@@ -45,26 +45,46 @@ describe('subtract', () => {
 
 describe('multiply', () => {
   test('can multiply two numbers', () => {
-    expected = 6;
-    actual = sum(10, 4);
+    expected = 100;
+    actual = multiply(25, 4);
     expect(actual).toBe(expected);
       }
     )
 });
 
 describe('divide', () => {
-
+  test('can divide two numbers', () => {
+    expected = 10;
+    actual = divide(100, 10);
+    expect(actual).toBe(expected);
+      }
+    )
 });
 
 describe('modulus', () => {
-
+  test('can locate the modulus of a number', () => {
+    expected = 0;
+    actual = modulus(100, 10);
+    expect(actual).toBe(expected);
+      }
+    )
 });
 
 describe('even', () => {
-
+  test('can check if a number is even', () => {
+    expected = false;
+    actual = even(11);
+    expect(actual).toBe(expected);
+      }
+    )
 });
 
 describe('odd', () => {
-
+  test('can check if a number is odd', () => {
+    expected = true;
+    actual = odd(99);
+    expect(actual).toBe(expected);
+      }
+    )
 });
 });
